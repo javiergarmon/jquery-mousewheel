@@ -191,7 +191,7 @@
         event.deltaMode = 0;
 
         // Add event and delta to the front of the arguments
-        args.unshift(event, delta, deltaX, deltaY);
+        args.unshift(event, delta, deltaX * lowestDelta, deltaY * lowestDelta);
 
         // Clearout lowestDelta after sometime to better
         // handle multiple device types that give different
